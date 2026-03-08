@@ -14,7 +14,14 @@ namespace DotNetTaskDemo
                 Skill = ".Net Developer"
             };
             string json= JsonConvert.SerializeObject(person);
+            Console.WriteLine("Serialized JSON:");
             Console.WriteLine(json);
+
+            var deserializedPerson = JsonConvert.DeserializeObject<dynamic>(json);
+            Console.WriteLine("\nDeserialized Object:");
+            Console.WriteLine($"Name: {deserializedPerson.Name}");
+            Console.WriteLine($"Age: {deserializedPerson.Age}");
+            Console.WriteLine($"Skill: {deserializedPerson.Skill}");
         }
     }
 }
