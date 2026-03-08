@@ -21,8 +21,10 @@ Supports ASP.NET, Windows Forms, and WPF
 Large ecosystem of libraries and tools
 Limitations
 Windows-only platform
+
 Less flexible for modern cloud and cross-platform development
 .NET Core
+
 Microsoft .NET Core was introduced as a modern, cross-platform framework.
 Key Advantages
 Cross-platform support (Windows, Linux, macOS)
@@ -30,6 +32,7 @@ Open-source development
 High performance
 Ideal for cloud and microservices architecture
 Modern .NET (Unified Platform)
+
 Microsoft later unified .NET Core and other frameworks into a single platform called Microsoft .NET.
 Current versions include:
 .NET 6
@@ -54,6 +57,8 @@ The library used in this project is:
 Newtonsoft.Json
 This library allows conversion of C# objects into JSON format.
 Example Code
+
+
 using Newtonsoft.Json;
 var person = new
 {
@@ -61,10 +66,13 @@ var person = new
     Age = 22,
     Skill = ".NET Developer"
 };
+
 string json = JsonConvert.SerializeObject(person);
 Console.WriteLine(json);
+
 Program Output
 {"Name":"Islam Fathy","Age":22,"Skill":".NET Developer"}
+
 The program creates a simple C# object and converts it into a JSON string using Newtonsoft.Json.
 What I Learned
 Through this task, I gained practical understanding of:
@@ -75,6 +83,7 @@ Installing and managing dependencies using NuGet
 Using external libraries like Newtonsoft.Json
 Serializing objects into JSON format
 Project Structure
+
 Codveda-Task1-DotNet-Ecosystem
 │
 ├── DotNetTaskDemo
